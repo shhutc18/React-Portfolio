@@ -2,11 +2,12 @@ import React from 'react';
 import myPicture from '../assets/images/Self.jpg'; // Replace with the path to your picture
 
 const AboutMe = () => {
-  const aboutMeStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '10px',
-  };
+    const aboutMeStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '10px',
+        backgroundColor: '#d7edd6', // Add a background color
+    };
 
   const imageStyle = {
     width: '29%', // Make the image smaller
@@ -16,9 +17,13 @@ const AboutMe = () => {
   };
 
   const textStyle = {
-    width: '80%', // Adjust as needed
-    fontSize: '25px',
+    width: '80%',
+    fontSize: '20px',
     fontFamily: "'Work Sans', sans-serif",
+    color: '#333',
+    lineHeight: '1.5',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', // Add a box shadow
+    padding: '20px', // Add some padding
   };
 
   return (
