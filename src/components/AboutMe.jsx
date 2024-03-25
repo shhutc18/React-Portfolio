@@ -13,16 +13,17 @@ const AboutMe = () => {
     width: '29%', // Make the image smaller
     marginRight: '20px',
     borderRadius: '10px', // Add rounded corners
-    border: '5px solid lightgrey',
+    border: '2px solid lightgrey',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
   };
 
   const textStyle = {
     width: '80%',
-    fontSize: '20px',
+    fontSize: '21px',
     fontFamily: "'Work Sans', sans-serif",
     color: '#333',
     lineHeight: '1.5',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', // Add a box shadow
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)', // Add a box shadow
     padding: '20px', // Add some padding
   };
 
