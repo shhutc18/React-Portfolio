@@ -2,30 +2,33 @@ import React from 'react';
 import myPicture from '../assets/images/Self.jpg'; // Replace with the path to your picture
 
 const AboutMe = () => {
-    const aboutMeStyle = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '10px',
-        backgroundColor: '#d7edd6', // Add a background color
-    };
+  const aboutMeStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '20px',
+    backgroundColor: '#f0f0f0',
+    fontFamily: "'Work Sans', sans-serif",
+    color: '#333',
+    lineHeight: '1.6',
+  };
 
   const imageStyle = {
-    width: '30%', // Make the image smaller
+    width: '30%',
     marginRight: '20px',
-    borderRadius: '10px', // Add rounded corners
+    borderRadius: '10px',
     border: '2px solid lightgrey',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
   };
 
   const textStyle = {
-    width: '80%',
-    fontSize: '21px',
-    fontFamily: "'Work Sans', sans-serif",
-    color: '#333',
-    lineHeight: '1.5',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)', // Add a box shadow
-    padding: '20px', // Add some padding
-    paddingBottom: '50px', // Add some padding to the bottom
+    width: '65%',
+    fontSize: '18px',
+    padding: '20px',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
+  };
+
+  const emojiStyle = {
+    textAlign: 'center',
   };
 
   return (
@@ -46,7 +49,7 @@ const AboutMe = () => {
         <p>
             Please feel free to reach out to me if you have any questions or would like to work together. I am always open to new opportunities and connections. In the meantime, feel free to take a look around and enjoy!
         </p>
-        <p style={{ textAlign: 'center' }}>🐶🐱</p> {/* Center the dog and cat emojis */}
+        <p style={emojiStyle}>🐶🐱</p> {/* Center the dog and cat emojis */}
       </div>
     </div>
   );
