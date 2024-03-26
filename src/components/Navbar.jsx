@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Navbar = () => {
   const navbarStyle = {
@@ -24,9 +25,9 @@ const Navbar = () => {
 
   return (
     <div style={navbarStyle}>
-      <a style={linkStyle} href="#aboutme">About Me</a>
-      <a style={linkStyle} href="#portfolio">Portfolio</a>
-      <a style={linkStyle} href="#contact">Contact</a>
+      <Link style={linkStyle} to="/">About Me</Link> {/* Change to Link */}
+      <Link style={linkStyle} to="/portfolio">Portfolio</Link> {/* Change to Link */}
+      <Link style={linkStyle} to="/contact">Contact</Link> {/* Change to Link */}
       <a style={linkStyle} href="https://docs.google.com/document/d/1x1crGquko9N9Ba6ol-8wlnwt3VkJVcHBfpbl0AHAa-w/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
   );
