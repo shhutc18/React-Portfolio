@@ -17,17 +17,15 @@ const Portfolio = () => {
   ];
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
       {portfolioItems.map((item, index) => (
-        <div key={index} style={{ display: 'flex', width: '100%', marginBottom: '20px' }}>
-          <div style={{ width: '40%', padding: '20px' }}>
-            <img src={item.img} alt={item.title} style={{ width: '100%', objectFit: 'cover', borderRadius: '10px', border: '2px solid black' }} />
-          </div>
-          <div style={{ width: '50%', padding: '20px', fontFamily: "'Work Sans', sans-serif" }}>
+        <div key={index} style={{ border: '1px solid #ccc', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}>
+          <img src={item.img} alt={item.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+          <div style={{ padding: '20px' }}>
             <h3>{item.title}</h3>
             <p>{item.text}</p>
-            <div><a href={item.appLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Click here for live application 🔗</a></div>
-            <div><a href={item.repoLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Click here for full GitHub repository🐙</a></div>
+            <a href={item.appLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block', textAlign: 'center', backgroundColor: '#007BFF', color: '#fff', padding: '10px 0', borderRadius: '5px', marginTop: '10px' }}>Live Application 🔗</a>
+            <a href={item.repoLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block', textAlign: 'center', backgroundColor: '#6c757d', color: '#fff', padding: '10px 0', borderRadius: '5px', marginTop: '10px' }}>GitHub Repository 🐙</a>
           </div>
         </div>
       ))}
