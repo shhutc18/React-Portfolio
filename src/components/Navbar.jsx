@@ -27,7 +27,7 @@ const Navbar = () => {
       <a style={linkStyle} href="#aboutme">About Me</a>
       <a style={linkStyle} href="#portfolio">Portfolio</a>
       <a style={linkStyle} href="#contact">Contact</a>
-      <a style={linkStyle} href="#resume">Resume</a>
+      <a style={linkStyle} href="https://docs.google.com/document/d/1x1crGquko9N9Ba6ol-8wlnwt3VkJVcHBfpbl0AHAa-w/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
   );
 };
