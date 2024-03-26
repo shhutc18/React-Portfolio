@@ -10,7 +10,7 @@ const AboutMe = () => {
     };
 
   const imageStyle = {
-    width: '29%', // Make the image smaller
+    width: '30%', // Make the image smaller
     marginRight: '20px',
     borderRadius: '10px', // Add rounded corners
     border: '2px solid lightgrey',
@@ -25,6 +25,7 @@ const AboutMe = () => {
     lineHeight: '1.5',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)', // Add a box shadow
     padding: '20px', // Add some padding
+    paddingBottom: '50px', // Add some padding to the bottom
   };
 
   return (
@@ -45,6 +46,7 @@ const AboutMe = () => {
         <p>
             Please feel free to reach out to me if you have any questions or would like to work together. I am always open to new opportunities and connections. In the meantime, feel free to take a look around and enjoy!
         </p>
+        <p style={{ textAlign: 'center' }}>🐶🐱</p> {/* Center the dog and cat emojis */}
       </div>
     </div>
   );
