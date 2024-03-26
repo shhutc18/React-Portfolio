@@ -1,21 +1,25 @@
+// App.jsx
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes
 import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Header from './components/Header.jsx';
 import AboutMe from './components/AboutMe.jsx';
-import Contact from './components/Contact.jsx'; // Import the Contact component
+import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <Header />
-      <AboutMe />
-      <Contact /> {/* Add the Contact component */}
+      <Routes> {/* Use Routes instead of Switch */}
+        <Route path="/" element={<AboutMe />} /> {/* Use element prop */}
+        <Route path="/contact" element={<Contact />} /> {/* Use element prop */}
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
 export default App;
