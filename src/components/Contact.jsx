@@ -89,7 +89,25 @@ const Contact = () => {
             />
           </label>
         </div>
-        <input type="submit" value="Submit" style={{ ...inputStyle, cursor: 'pointer' }} />
+        <input 
+          type="submit" 
+          value="Submit" 
+          style={{ 
+          ...inputStyle, 
+          cursor: 'pointer', 
+          backgroundColor: '#007BFF', 
+          color: '#fff', 
+          border: 'none', 
+          borderRadius: '5px', 
+          padding: '10px 20px', 
+          fontSize: '1em', 
+          transition: 'all 0.3s ease',
+          ':hover': {
+            backgroundColor: '#0056b3',
+            transform: 'scale(1.05)'
+          }
+        }} 
+      />
       </form>
     </div>
   );
