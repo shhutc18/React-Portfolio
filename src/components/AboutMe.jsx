@@ -1,5 +1,6 @@
 import React from 'react';
 import myPicture from '../assets/images/Self.jpg'; // Replace with the path to your picture
+import Green from '../assets/images/Green2.jpg';
 
 const AboutMe = () => {
   const aboutMeStyle = {
@@ -10,46 +11,55 @@ const AboutMe = () => {
     fontFamily: "'Work Sans', sans-serif",
     color: '#333',
     lineHeight: '1.6',
+    backgroundImage: `url(${Green})`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
   };
 
   const imageStyle = {
     width: '30%',
+    height: '550px',
     marginRight: '20px',
-    borderRadius: '10px',
+    borderRadius: '50%', // Make the image circular
     border: '2px solid lightgrey',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
+    position: 'relative',
+    top: '-150px',
   };
 
-  const textStyle = {
-    width: '65%',
+  const cardStyle = {
+    width: '35%', // Adjust the width to make room for the new section
     fontSize: '18px',
     padding: '20px',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
+    borderRadius: '10px', // Add rounded corners
+    backgroundColor: '#fff', // Add a background color
   };
 
-  const emojiStyle = {
-    textAlign: 'center',
-  };
+  const technologies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Bootstrap', 'APIs', 'JQuery', 'JSON', 'AJAX', 'Agile Development', 'Object Oriented Programming', 'Express', 'MySQL', 'NoSQL', 'MVC', 'Sequelize', 'Testing', 'MERN Stack', 'GraphQL']; // Add your technologies
 
   return (
     <div style={aboutMeStyle}>
       <img src={myPicture} alt="Me" style={imageStyle} />
-      <div style={textStyle}>
+      <div style={cardStyle}>
+        <h2>About Me</h2>
         <p>
-          Hi there! Nice to meet you and welcome to my personal portfolio. Whether you are looking to learn more about me personally
-          or just take a look at the projects I have worked on, you have come to the right place. I am a web developer with a passion
-          of creating and designing websites with a purpose. I am always looking for new opportunities to learn and grow in the field of web development.
+          Hi there! My name is Shelby Hutchinson and I am a full-stack web developer. I recently graduated from the University of Oregon with a certification in Full-Stack Web Development. I am passionate about creating appealing and efficient full-stack applications. I am excited to bring my skills to a team that values creativity and innovation.
         </p>
         <p>
-          I graduated from the University of Oregon with a Full Stack Web Developement Certificate and have been working on projects ever since.
+          I enjoy collaborating as a team and am always looking for ways to grow and broaden my skill set as a developer. If you would like to check out some of my work, please feel free to take a look around my Portfolio.
         </p>
         <p>
-          When I am not coding, I enjoy spending time with my family, friends and 3 fur babies, hiking, and traveling. Video games are also a big part of my life, so if you have any recommendations, I would love to hear them!
+          When I'm not coding, you can find me hiking, reading, or spending time with my family and friends. I am always up for a new challenge and am excited to see where my coding journey will take me next!
         </p>
-        <p>
-            Please feel free to reach out to me if you have any questions or would like to work together. I am always open to new opportunities and connections. In the meantime, feel free to take a look around and enjoy!
-        </p>
-        <p style={emojiStyle}>🐶🐱</p> {/* Center the dog and cat emojis */}
+      </div>
+      <div style={cardStyle}>
+        <h2>Technologies & Knowledge</h2>
+        <ul>
+          {technologies.map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
