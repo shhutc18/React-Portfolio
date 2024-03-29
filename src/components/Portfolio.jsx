@@ -17,7 +17,12 @@ const Portfolio = () => {
   ];
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
+    <div style={{ 
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+      gap: '20px',
+      fontFamily: "'Work Sans', sans-serif"
+    }}>
       {portfolioItems.map((item, index) => (
         <div key={index} style={{ border: '1px solid #ccc', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}>
           <img src={item.img} alt={item.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
