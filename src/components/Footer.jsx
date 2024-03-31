@@ -5,6 +5,7 @@ const Footer = () => {
   const footerStyle = {
     display: 'flex',
     justifyContent: 'center',
+    position: 'fixed',
     alignItems: 'center',
     height: '60px',
     backgroundColor: 'lightgrey',

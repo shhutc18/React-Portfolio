@@ -31,6 +31,7 @@ const AboutMe = () => {
     width: '35%', // Adjust the width to make room for the new section
     fontSize: '18px',
     padding: '20px',
+    paddingBottom: '100px',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
     borderRadius: '10px', // Add rounded corners
     backgroundColor: '#fff', // Add a background color
