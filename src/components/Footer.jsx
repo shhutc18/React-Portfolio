@@ -9,7 +9,6 @@ const Footer = () => {
     height: '60px',
     backgroundColor: 'lightgrey',
     color: 'black',
-    position: 'fixed',
     bottom: 0,
     width: '100%',
   };
